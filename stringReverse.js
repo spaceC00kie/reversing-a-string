@@ -1,9 +1,8 @@
-const revStr = () => {}
+const revStr = (x) => {
 
 //make string into an array
-str = "gotit"
-const makeArr = str.split("")
-console.log(makeArr)
+
+const makeArr = x.split("")
 
 //define left and right pointer variables
 
@@ -14,3 +13,4 @@ console.log(makeArr)
 //make array into string
 
 //return string
+}
