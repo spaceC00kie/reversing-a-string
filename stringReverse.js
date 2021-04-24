@@ -7,11 +7,15 @@ const revStr = str => {
   //while loop moving pointers in until the pointers cross
   while (left < right) {
     //switch the values at the pointers
+    const temp = arr[left]
+    arr[left] = arr[right]
+    arr[right] = temp
     //move both pointers inward
+    left++
+    right--
   }
-  //make array into string
-
-  //return string
+  //make array into string and return
+  return arr.join("")
 }
 
-revStr("testing")
+console.log(revStr("testing"))
